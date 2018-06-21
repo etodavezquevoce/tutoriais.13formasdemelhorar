@@ -6,6 +6,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
+	  var country_code = null;
+$.getJSON('http://ipinfo.io/' + userip, function(data){
+    country_code = data.country;
+    alert(country_code);
+});
+	  
 <style type="text/css">
 textarea.form-control:hover{cursor:not-allowed}
 div.diva{display:none;position:absolute}
